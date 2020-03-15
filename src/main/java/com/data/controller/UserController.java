@@ -1,5 +1,6 @@
 package com.data.controller;
 
+import com.data.bean.User;
 import org.springframework.web.bind.annotation.*;
 
 import java.text.SimpleDateFormat;
@@ -12,6 +13,11 @@ public class UserController {
     @GetMapping
     public String index(){
         return new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date()) + ",ok";
+    }
+
+    @GetMapping("/queryuser/{id}")
+    public User queryUser(@PathVariable("id") Long id){
+        return new User(id,"Jack","男",23);
     }
 
     @PostMapping
