@@ -27,7 +27,7 @@ public class UserController {
 
     @GetMapping("/queryusername2/{id}")
     public String queryUserName2(@PathVariable("id") Long id){
-        return "id:"+id+",name:Jack,okhaha";
+        return "id:"+id+",name:Jack,okhaha2223";
     }
 
     @PostMapping
