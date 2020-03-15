@@ -20,6 +20,11 @@ public class UserController {
         return new User(id,"Jack","男",23);
     }
 
+    @GetMapping("/queryusername/{id}")
+    public String queryUserName(@PathVariable("id") Long id){
+        return "id:"+id+",name:Jack";
+    }
+
     @PostMapping
     public String post(@RequestParam String name){
         return "name:" + name;
