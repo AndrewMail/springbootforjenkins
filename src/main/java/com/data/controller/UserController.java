@@ -30,6 +30,11 @@ public class UserController {
         return "id:"+id+",name:Jack,okhaha2223";
     }
 
+    @GetMapping("/queryusername3/{id}")
+    public String queryUserName3(@PathVariable("id") Long id){
+        return "id:"+id+",name:Jack,okhaha3333";
+    }
+
     @PostMapping
     public String post(@RequestParam String name){
         return "name:" + name;
