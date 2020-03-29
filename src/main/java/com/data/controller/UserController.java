@@ -22,7 +22,7 @@ public class UserController {
 
     @GetMapping("/queryusername/{id}")
     public String queryUserName(@PathVariable("id") Long id){
-        return "id:"+id+",name:Jack,okhaha";
+        return "id:"+id+",name:Jack,okhaha12343434543534534";
     }
 
     @GetMapping("/queryusername2/{id}")
