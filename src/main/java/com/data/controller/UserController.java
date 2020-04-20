@@ -12,7 +12,7 @@ public class UserController {
 
     @GetMapping
     public String index(){
-        return new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date()) + ",ok";
+        return new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date()) + ",ok123";
     }
 
     @GetMapping("/queryuser/{id}")
